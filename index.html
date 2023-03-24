@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Site</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav" id="nav">
+            <div class="menu-logo-hm" id="btnBM">
+                <div class="b b1"></div>
+                <div class="b b2"></div>
+                <div class="b b3"></div>
+            </div>
+            <div class="logo" id="logo">
+                <svg version="1.1"  class="logo-l" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="211px" height="188px" viewBox="0 0 211 188" enable-background="new 0 0 211 188" xml:space="preserve">  <image id="image0" width="211" height="188" x="0" y="0"
+                    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANMAAAC8CAQAAABIrFPdAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+                AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAJcEhZ
+                cwAACxIAAAsSAdLdfvwAAAAHdElNRQfnAxgKAS+qxQ30AAALd0lEQVR42u2dzZHjuhHH/3D5PnIE
+                o/LJt1EGyxfB4OTrwhGYEXi1ETw6goeXATaCx8mAe3CVTy5OBpwI2gdpJEgimxQ/0IKE31TtSmh8
+                dOsvkGyKIBUSNwa1lP1J2qnEEJJMUZBkioIkUxQkmaIgyRQFSaYoSDJFQZIpCpJMUZBkioIkUxQk
+                maIgyRQFSaYoSDJFQZIpCpJMUZBkioIkUxQkmaIgyRQFSaYoSDJFwZ+lHQgFbQUGrZWdpyMl4Hwr
+                tEXWU2Wrygn90/i2o3lTfTG1edpSdiOziVbI8dRTyaCU9lOKW9k36V6RAE0raTeluBWZzIA6T9DS
+                bkpxEzLRGl8GVTTSnkpxEzIhH1jvC62lXZXhNmTSg2saaVdluAGZSON5cGUj7a0MNyDTVQcGz5RJ
+                uyuBuEy0wterGhhpjyUQl+nqg+wHzp4EoYquxYwah2Mr/SmceNryJzybaI2XqxsZWZ8lkN7o5SPa
+                PGD2JC2TGdUqF/Y6OKIy0ZATrm1oSa8lkJ1NZmS7Z9KifgdHUCZa4ZUxf7CNtZzfEkjOJsNac1ao
+                r4+VPd2qTB9wsGxrLeh5cMRkog2bMTnV9MiUS3kugdxsMqzVAqrCT6bGyyNlT7cp0/v+GiLL9pCL
+                +R4cIZl6Mia3/9+ynWgZ3yWQmk2GtRa7/1SDH0ytB8qeRGSiNZsx/VT14bVlO9IS3ksgM5s0ay2O
+                L5VL2RMgJVPOWt3JO8vW1SL+B0dAJtqwl6j8rpqT95btLA/vvwQSsylnre70bcqeABmZNGN7V+6i
+                zLK95QIRBCe4TGQGZUx9ZUd06AgkCD+bNGstLotUnbKnwDJdkTH5OLZTEzYGCULPJsNabXuxsmz2
+                9Hr/2VMUMuHh51NQmShjM6YfZxmTT8F2bEJGIUHY2WRYq+02qQrvTMsX2gSNIzgBZaIVe5T30ZIx
+                +RSs1YSLQ4KQs4n/jcn2tHas1QSMQ4CQMhnWavnGPdnT031nT8Fk6lkG/VNVvV041mpCRSJBuNlk
+                WKsd0IN73OwpIplU87jzKZBMPcuguYzJx7JWEyYWCULds0izVjusE1XSOyP3C20G7OHaWM+88Loa
+                +LW7LWjFLqm8IiTasj0VTMuQZJM+LbFFnZq1uit6sqzVBIlGgDAy5ay1GN6RqvHGmO82ewogU88y
+                6Pcr9yeWtZrl45EgxGzKWWtxZW992dM6QETBCSGTZq3uus56syc9qJvIWFym3oypvrpLy1rzpSOS
+                YPnZZFiru75DVbK/PT3f429PC8vUtwx65A2gHWvNl41JgqVnk2GtbmSvBWvVC8ckgKxMxbhOVc1e
+                sPw07uZTDwtt2FMq9YSeDduza2mR7gDWiWGtdkLPjrXeXfYUqUyqwe9sBb1oXMFZUKaeZdBvIzIm
+                H8da8+XikmDJ2WRYq53WuXKPlD0tJlPvjaPc5CH4HvKlIpNgudlkWKub4ffNgrXqxSITYDmZctZq
+                pw/wSNnTQjL1LIN+n/LALA/LWvUysUmw1GzKWaudaRS+nzvKnpaSSbNWO88gPTfLuaP5tIhMPcug
+                p2ZMPpa15ktEJ8Ey1+lp1lrNeFVcw1qfKZtpL3h/0DroNXE89uBVOvV6hpYO1PflPhYALCFTLh2U
+                x508NnJ2mXqWQYfHSDswB/PPJiMd0hl38eCTmWXqWQYtg5F2YDpzz6axDydZEiPtwHTmlslIB9TC
+                HTw2claZBj8NOjRG2oGpzDubjHQ4HUSfPT2GTNFnTzPK1JMxfeAvakHwb9Y5I/1BT2PO2WRY6xw/
+                q3MUrPU295mDmU2m3qdB22UD6fnJPXLmm02atc71szpHsfgIYswnU85abYBYXIAxhJhJpt6nQdvl
+                Q+m9YDli5ppNOWud82d1DhdkFAHmkkmzVhsmmJ4LliNmFpl6lkHPcSHyUMKNFJR5ZpNmrUtnTD5F
+                sJGCMoNM0hmTz71mT3PMJs1aQ2RMPkXQ0eKBqlu6uKrnpnBhKUdFsMQFYD1Pgw66yQPuNXuavtEz
+                rDVUxuTjgo+4OEvLZMOHdI/Z00SZepZBh8yYfGRGXZCps8mw1pAZk08hMuqCTJKpZxm0yCYPuMfs
+                adpsMqw1dMbkU4iNvAhLymQF43KCYy/ABJluLWPyubfsacpsylmrRMbk40RHnxk1viltsGLMtbBM
+                uIE1gPWYu29SS9kEmRLL0CaTxDPZE1eTZIqCJFMUJJmiIMkUBUmmKEgH5DfO7vB8xD2L6G/4q7Tz
+                d8L/1H+HVRxza6kX/F06vjvhP/jXsIppo3fj7DZ66RAiCpJMUZBkioIkUxQkmaJgqfuQr2gb+51N
+                HgBy/n1WY4G2NPF56gv4NN+9XklT2fYEsta6JfeA+wHtt6eLHpb+mK70bmJ0Xcxzg2uDLwBtvMd2
+                b1F1XCsX+f1Oelgounn2TZn3LwBAVWq74IXJv3j3KnoIZphNpPGEH3iFPs4fWmONSjXHV7SBhsUa
+                wIoyeFce0QoZNqhQHoU9adXA9V+lRGtkWMN5M/pYWp5ff0traAClqnZXSLVfn9teq8s3WrdG1+FB
+                cKggIk0V0fHY7rgz3r0iu1s5eLmK0Ctrjo/yOWlFRMctfvtu3uul9LwoDqW1/3Q0r9zRisrPPdxp
+                33ytS99ao+vw4IpPF4RZdsBUE+0dOvuYD68+QzJUElFDJZW7uvswHG33S0ON177cWxwREeXdMpEm
+                ooYK2lJ9XEpJ9lC6G3XjlR/HdO0y9dRq8a0lug4PBGSiNRE5gDL/EPxMJiL7+R33V6RSdvLxGSJq
+                dvX2rYxnqRmZysNoK6qJaL3vuz6Maj/HbR3zQqbeWq2+tUR39MCMW4s7l0z54dvUUNMhU+XV9wOx
+                /gzcv88PrbygqCLafWi0JaKcsv3f+lOmQ81iNzI5ItJeD5/yuePMPIx5KVNfrVbfzqJzp18oKnce
+                jJFp+pFehs/rtUs8dUxr19FWAyeX7xbwb19QnvWwOrz7FX/s/wwAoAE+5Va5UqoEkOFDuZOxfkGz
+                99cfc9sZFVer2ze/j4+TA4cSo58fMv1I7xXv+6Mah1doVC116o62T3jz36qKgPXhbYUufh4eCLTr
+                2eIVv1EG5wlz0fex3E8VVN26Semr1e2b38fPk81zA7BX3TNMlIk0jnOlBKBbv511a9usrdS7+1GD
+                LvLTw1vl6B8o8BVf6R1WbTv7bi9/O09KB9Tq9s3v4wV/DPoYe5k6mzSA5hDWO15oNTitrVpLP8a4
+                oSw5aGi84hutlen8treVb0bW6o/u/WKNVzkmuukyZQC+4ZtXoocuP1MNnQVPawzbnLT2BgtLazh8
+                peJs88mNubpciz+s1oDoGrUdF80505ZIb/CMD7wd/n7iup3kDzydbGAMRslE28+jMlWjwO7L83b6
+                wO/D8dgPPPlHgB2L6YbV4nnDi39kRwWVYx9BPu1ILwOwVdnhb4MP/8xeB6vDKwegOGQWG+QYt7g5
+                x6+HD2SD3Z7D+n1Rhhe8q6pjzEuG1eKjO/Vgg39ic3oqazjTNnoa5wfbJV57Hrv4jhcq0KBUpbKU
+                4wUlFaihYfCE74PWGJrjHFRbAAW+wdEWDTYwO5+UpRxfqESBBhly7GfEfsyKtqiRIUeN5vK89rBa
+                A6J73XuwwRYyz4mjlZ9/78vM7hzX+Tm9sxqHs160Orl/mD3UOm91flbj7PcmKr0isy/bnPRtPL+P
+                5TVtOk4WDap10YqLrhj1KYNAk2bTCt8v9iQlvqPG7oim3pecHJArS9XuvDMAqAYbMtBYoYLzZuFZ
+                q7P+LlAZGWRYo4b97EVVlMEgwwoViuMsVQ1lMPstgVUN2UOf3qjDal20Ghbd1TzI7zXxkq56jYgk
+                UxQkmaIgyRQFSaYoSDJFQZIpCpJMUZBkioIkUxQkmaIgyRQFSaYoSDJFQZIpCpJMUZBkioIkUxQk
+                maIgyRQF/wd/0NWQxGPSwgAAABZ0RVh0Q3JlYXRpb24gVGltZQAwMy8yNC8yM3GoCvIAAAAldEVY
+                dGRhdGU6Y3JlYXRlADIwMjMtMDMtMjRUMDk6MDE6NDcrMDE6MDAHuaecAAAAJXRFWHRkYXRlOm1v
+                ZGlmeQAyMDIzLTAzLTI0VDA5OjAxOjQ3KzAxOjAwduQfIAAAABx0RVh0U29mdHdhcmUAQWRvYmUg
+                RmlyZXdvcmtzIENTNui8sowAAAAASUVORK5CYII=" />
+                </svg>
+                
+                <!-- <img class="logo-l" src="/media/img/logo.png" alt="" srcset=""> -->
+            </div>
+        </nav>
+        <ul class="menu" id="menu">
+            <li class="menu-btn"><a onclick="scrollToSection('skill')">Skill</a></li>
+            <li class="menu-btn"><a onclick="scrollToSection('experiencie')">Experience</a></li>
+            <li class="menu-btn"><a onclick="scrollToSection('about')">About me</a></li>
+            <li class="menu-btn"><a onclick="scrollToSection('contact')">Contact</a></li>
+            <!-- <li class="end" id="end"></li> -->
+        </ul>
+    </header>
+    <main class="main" id="main">
+        <section class="section landingpace" id="landingpage">
+            <article class="lp-msg">
+                <div class="lp-msg-box">
+                    <p class="lp-hw" id="hw">Hello World</p>
+                    <p class="lp-mn bng">My name is <span class="lp-name">Airton</span></p>
+                    <p class="lp-wmd wn"><span class="lp-w">Web</span> and <span class="lp-m">Mobile</span> <span class="lp-developer">Developer</span></p>
+                </div>
+            </article>
+        </section>
+        <section class="section skills" id="skill">
+            <article class="sk-developer skill-a">
+                <p class="sk-title" id="sk-c">Developer Skill</p>
+                <div class="sk-circle">&lt;/&gt;</div>
+                <div class="sk-desc">
+                    <div class="sk-desc-front">
+                        <span class="la">html</span>
+                        <span class="lf">css</span>
+                        <span class="lc">javascript</span>
+                        <span class="lb">json</span>
+                        <span>sql</span>
+                        <span class="lb">jquery</span>
+                        <span class="lg">php</span>
+                        <span class="la">laravel</span>
+                        <span>mysql</span>
+                        <span class="le">flutter</span>
+                        <span class="ld">mongodb</span>
+                        <span class="lb">codeigniter</span>
+                    </div>
+                </div>
+            </article>
+            <article class="sk-tools skill-a">
+                <p class="sk-title sk-c" id="sk-title">Dev Tools</p>
+                <div class="sk-circle">
+                    <svg class="sk-c-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+                        <path d="M913.2,10.5H86.8C44.5,10.5,10,44.9,10,87.2v825.5c0,42.3,34.5,76.8,76.8,76.8h826.4c42.4,0,76.8-34.5,76.8-76.8V87.2C990,44.9,955.5,10.5,913.2,10.5z M861.1,97.9c18.2,0,32.9,14.7,32.9,32.9c0,18.2-14.7,32.9-32.9,32.9c-18.2,0-32.9-14.7-32.9-32.9C828.2,112.6,843,97.9,861.1,97.9z M743.2,97.9c18.2,0,32.9,14.7,32.9,32.9c0,18.2-14.7,32.9-32.9,32.9c-18.2,0-32.9-14.7-32.9-32.9C710.3,112.6,725,97.9,743.2,97.9z M902.2,901.8H97.8V245.4h804.5L902.2,901.8L902.2,901.8z M478.4,490.9L213.4,612.3v-58.5l204.8-87.8V465l-204.8-87.8v-58.5l264.9,121.4V490.9L478.4,490.9z M786.6,592.3h-276v-27.6h276V592.3z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></g>
+                        </svg>
+                </div>
+                <div class="sk-desc">
+                    <div class="sk-desc-front">
+                        <span class="la">Git</span>
+                        <span>GitHub</span>
+                        <span class="lf">Visual Studio Code</span>
+                        <span class="lg">Docker</span>
+                        <span class="ld">Android Studio</span>
+                    </div>
+                </div>
+            </article>
+            <article class="sk-soft skill-a">
+                <p class="sk-title sk-c" id="sk-soft">Soft Skill</p>
+                <div class="sk-circle">
+                    <svg class="sk-c-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <g> <path fill="none" d="M0 0h24v24H0z"/> <path d="M2 22a8 8 0 1 1 16 0H2zm8-9c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6zm7.363 2.233A7.505 7.505 0 0 1 22.983 22H20c0-2.61-1-4.986-2.637-6.767zm-2.023-2.276A7.98 7.98 0 0 0 18 7a7.964 7.964 0 0 0-1.015-3.903A5 5 0 0 1 21 8a4.999 4.999 0 0 1-5.66 4.957z"/> </g> </svg>
+                </div>
+                <div class="sk-desc">
+                    <div class="sk-desc-front">
+                        <span class="ld">Communication</span>
+                        <span class="lc">Teamwork</span>
+                        <span class="la">Motivation</span>
+                        <span class="le">Critical Thinking</span>
+                    </div>
+                </div>
+            </article>
+        </section> 
+        <section class="section experience" id="experiencie">
+            <p class="ex-title" id="ex-c">Experience </p>
+            <article class="ex-sd" id="">
+                <div class="ex-sd-w">
+                    <div class="ex-sd">
+                        <img class="ex-sd-img" src="https://www.tarjetalamagica.com.pe/wp-content/themes/ligo/img/logo-ligopay.png" alt="">
+                        <div class="ex-star">
+                            <div id="star" class="ex-star-ico">
+                                <svg style="color: rgb(255, 225, 31);" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16"> <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" fill="#ffe11f"></path> </svg>
+                                <span><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-trophy" viewBox="0 0 16 16"> <path d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5c0 .538-.012 1.05-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33.076 33.076 0 0 1 2.5.5zm.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935zm10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935zM3.504 1c.007.517.026 1.006.056 1.469.13 2.028.457 3.546.87 4.667C5.294 9.48 6.484 10 7 10a.5.5 0 0 1 .5.5v2.61a1 1 0 0 1-.757.97l-1.426.356a.5.5 0 0 0-.179.085L4.5 15h7l-.638-.479a.501.501 0 0 0-.18-.085l-1.425-.356a1 1 0 0 1-.757-.97V10.5A.5.5 0 0 1 9 10c.516 0 1.706-.52 2.57-2.864.413-1.12.74-2.64.87-4.667.03-.463.049-.952.056-1.469H3.504z"/> </svg></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ex-sd-site">
+                        <p class="ex-sd-wt">Tarjeta La Magica</p>
+                        <p class="ex-sd-wd">Servicios financieros</p>
+                    </div>
+                </div>
+                <div class="ex-sd-exp">
+                    <p class="ex-sd-exp-t">Skill Developed </p>
+                    <p class="ex-sd-exp-d">
+                        <span class="la">html</span>
+                        <span class="lf">css</span>
+                        <span class="lc">javascript</span>
+                        <span class="lb">jquery</span>
+                        <span>sql</span>
+                        <span class="lg">php</span>
+                        <span class="lb">codeigniter</span>
+                    </p>
+                </div>
+            </article>
+        </section>
+        <section class="section about" id="about">
+            <p class="am-title" id="am-c">About me </p>
+            <article class="am-me">
+                <div class="am-me-des">
+                    <img class="am-me-img" src="/media/img/me.jpg" alt="">
+                    <p class="am-me-des-title">I am <span class="am-me-des-title-name">Airton</span> ,</p>
+                    <ul class="am-me-des-about">
+                        <li class="am-me-des-about-data one">Software Developer</li>
+                        <li class="am-me-des-about-data two">Interactive Web Experiences Creator</li>
+                    </ul>
+                </div>
+                <div class="am-me-img">
+                    <img src="" alt="" class="am-me">
+                </div>
+            </article>
+        </section>
+        <section class="section contact" id="contact">
+            <p class="cm-title" id="cm-c">Contact </p>
+            <p class="cm-des">Feel free to contact me, visit my social media accounts, or send me a direct message for any inquiries you may have</p>
+            <a href="mailto:airton_vyem@hotmail.com"><div class="cm-btn" id="cm-btn" title="Send me an E-mail (The classic mailto)"><p class="cm-btn-s">send_message<span class="cm-parenthesis">(</span><span class="cm-msg">msg</span><span class="parenthesis">)</span></p></div></a>
+            <p class="cm-red">
+                <a href=""  target="_blank">
+                    <span class="cm-red-ico" id="" title="Twitter">
+                        <svg style="color: white" xmlns="http://www.w3.org/2000/svg" class="ico-ico" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16"> <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" fill="white"></path> </svg>
+                    </span>
+                </a>
+                <a href="https://www.linkedin.com/in/airton-escalante/" target="_blank">
+                    <span class="cm-red-ico" id="" title="Linkedin">
+                        <svg style="color: white" xmlns="http://www.w3.org/2000/svg" class="ico-ico" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"> <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" fill="white"></path> </svg>
+                    </span>
+                </a>
+                <a href="https://github.com/AreleoLoyv" target="_blank">
+                    <span class="cm-red-ico" href="" id="" title="GitHub">
+                        <svg style="color: white" xmlns="http://www.w3.org/2000/svg" class="ico-ico" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"> <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" fill="white"></path> </svg>
+                    </span>
+                </a>
+            </p>
+        </section>
+        <footer class="footer" id="footer">
+            <p class="copyright">Web designed by Airton Escalante (2023)</p>
+            <p class="thanks">Thank you for visiting my website :)</p>
+        </footer>
+    </main>
+    <script src="/js/main.js"></script>
+</body>
+</html>
