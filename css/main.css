@@ -48,6 +48,7 @@ html {
 } 
 
 body {
+    background-color: #151515;
     margin: 0;
     scroll-behavior: smooth;
 }
@@ -129,6 +130,7 @@ nav{
     position: absolute;
     overflow: hidden;
     height: 0px;
+    font-family: "Poppins";
 }
 
 .open{
@@ -171,14 +173,11 @@ nav{
 
 /*  Main */
 
-main{
-    background-color: orange;
-}
-
 .landingpace{
     background-image: url("/media/img/main.jpg");
     background-size: 200% 100%;
     background-position: 50% 50%;
+    
 }
 
 .section{
@@ -191,7 +190,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
-    background-color: black;
+    background-color: #1E1E1E;
     padding: 2rem 0rem;
 }
 
@@ -281,6 +280,7 @@ main{
     padding-bottom: 2rem;
     padding: min(10vh, 10vw) 0;
     overflow: hidden;
+    width: 100%;
 }
 
 .skill-a{
@@ -368,8 +368,12 @@ main{
     padding: 2rem;
     text-align: center;
     font-family: "poppins";
-   
 }
+
+.ex-sd:nth-of-type(2){
+    display: none;
+}
+
 
 .ex-title{
     font-family: "sourcecodepro";
@@ -379,10 +383,12 @@ main{
     margin: 1rem 4rem;
 }
 
+
 .ex-sd-img{
     background-color: white;
     margin: 4rem 0;
-    padding: 3rem 1rem;
+    padding: 3rem 3rem;
+    width: 100%;
 }
 
 .show{
@@ -435,7 +441,7 @@ main{
 }
 
 .ex-sd-wt{
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
@@ -490,17 +496,7 @@ main{
     margin: 2rem 0;
 }
 
-.am-me-des-about{
-    overflow: hidden;
-    width: 100%;
-    height: 80px;
-}
 
-.am-me-des-about-data{
-    width: 100%;
-    font-size: 3rem;
-    list-style: none;
-}
 
 .am-me-des-title-name{
     color: #FF7F00;
@@ -509,6 +505,20 @@ main{
     font-size: 4.5rem;
 }
 
+.am-me-des-about{
+    /* overflow: hidden;
+    width: 100%;
+    height: 80px;
+    display: inline-flex; */
+}
+
+.am-me-des-about-data{
+    font-family: "sourcecodepro";
+    width: 100%;
+    font-size: 3rem;
+    list-style: none;
+}
+/* 
 .one{
     position: absolute;
     left: -100%;
@@ -517,7 +527,7 @@ main{
 .two{
     position: absolute;
     left: 0;
-}
+} */
 
 /* CONTACT */
 
@@ -553,21 +563,6 @@ main{
     border-radius: 10px;
     padding: 2rem 1rem;
     
-}
-
-/* @keyframes btn{
-    from{
-        background-color: none;
-    }
-    to{
-        background-color: white;
-    }
-} */
-
-.cm-btn:hover{
-    
-    /* animation-name: btn;
-    animation-duration: 0.2s; */
 }
 
 .parenthesis{
@@ -608,38 +603,123 @@ main{
     font-size: 1rem;
 }
 
-@media screen and (min-width: 321px) {
-    main{
-        background-color: yellow;
+@media screen and (min-width: 425px) {
+    header{
+
     }
+
+    .menu{
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+
+    .menu-btn{
+        width: 50vw;
+        font-size: 2.5rem;
+    }
+
+    @keyframes menu{
+        from{
+            height: 0px;
+        }
+        to{
+            height: 99px;
+        }
+    }
+
+    /*LP*/
+
+    .landingpace{
+        padding: min(15vh, 15vw) 0;
+        
+    }
+
+    /* SKILLS */
+
+    .skills{
+
+    }
+
+    .skill-a{
+
+    }
+
+    .sk-circle{
+
+    }
+
 }
 
 @media screen and (min-width: 768px) {
-    main{
-        background-color: green;
+
+    header{
+        height: 65px;
+        margin: auto;
     }
+
+    @keyframes menu{
+        from{
+            height: auto;
+        }
+        to{
+            height: auto;
+        }
+    }
+
+    .menu-logo-hm{
+    display: none;
+    }
+
+    .logo{
+        position: absolute;
+        z-index: 2;
+        width: min(210px,12vw);
+        max-width: 210px;
+        text-align: center;
+        background-color: #0A0A0A;
+    }
+
+    .menu{
+        max-width: min(100vw,1440px);
+        background-color: #0A0A0A;
+        display: inline-flex;
+        position: absolute;
+        z-index: 1;
+        height: max-content;
+    }
+
+    .menu-btn{
+        width: min(22vw,307.5px);
+        font-size: 2rem;
+        z-index: 2;
+        padding: 2.1rem 0;
+        /* margin: 0 auto; */
+    }
+
+    .menu-btn:nth-last-child(2) {
+        margin-left: auto;
+    }
+
 
     .landingpace{
         display: flex;
-        height: min(100vw, 52.9vw);
-        max-width: 1440px;
-        max-height: 762.8px;
         flex-direction: row-reverse;
         background-size: cover;
+        padding: 0;
+        height: min(100vw, 52.9vw);
+        max-width: 1440px;
+        max-height: 572.1px;
     }
 
-   
-
     .lp-msg{
-        
-        background-color: black;
         padding: 0;
         position: relative;
         width: 50%;
+        max-height: 762.8px;
     }
 
     .lp-msg-box{
-
+        
     }
     
     .lp-hw{
@@ -647,49 +727,286 @@ main{
     }
 
     .lp-mn{
-        font-size: 4rem;
+        font-size: 3.3rem;
     }
 
     .lp-name{
-        font-size: 5.5rem;
+        font-size: 5rem;
     }
 
     .lp-wmd{
-        font-size:2rem;
+        font-size:1.8rem;
     }
 
        /**/
     /*WEB*/
     .lp-w,.lp-m{
-        font-size:3.3rem;
+        font-size:3rem;
     }
 
     .lp-developer{
-        font-size: 2.8rem;
+        font-size: 2.5rem;
+    }
+
+    /* SKILLS */
+
+    .skills{
+        padding: min(5vh, 5vw) 0;
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skill-a{
+        width: 30%;
+        max-width: 400px;
+        font-size: 0.8rem;
+    }
+
+    .sk-circle{
+        
+    }
+
+    .sk-desc-front{
+        font-size: 2rem;
+        text-align: unset;
+    }
+
+    /* EXPERIENCE */
+    
+    .experience{
+        width: 100%;
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly
+    }
+
+    .ex-sd:nth-of-type(2){
+        display: flex;
+    }
+    
+
+    .ex-title{
+        width: 100%;
+        margin: 1rem 10rem;
+    }
+
+    .ex-sd{
+        width: min(40vw,576px);
+        max-width: 576px;
+    }
+
+    .ex-sd-you{
+        font-size: 3rem;
+        height:min(17vw,235px);
+        max-height: 235px;
+        background-color: white;
+        color:#151515;
+        margin: 4rem 0;
+        padding: 4rem 0rem;
+        display: inline-flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+
+    /* ABOUT */
+    
+    .about{
+        display: inline-flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .am-title{
+        width: 100%;
+        margin: 1rem 10rem;
+    }
+
+    .am-me-des{
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .am-me-img{
+        width: 20%;
+        margin: 5rem;
+    }
+
+    .am-des-me{
+        width: 50%;
+    }
+
+    .am-me-des-title{
+        font-size: 4.5rem;
+    }
+
+    .am-me-des-title-name{
+        font-size: 5.5rem;
+    }
+
+    .am-me-des-about-data{
+        margin-top: 15%;
+    }
+
+    /* CONTACT */
+
+    .contact{
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .cm-title{
+        width: 100%;
+        margin: 1rem 10rem;
+    }
+
+    .cm-des{
+        margin: 4rem;
+    }
+
+    .cm-btn{
+        margin:1rem 0 4rem 0;
+        padding: 2rem 4rem;
+    }
+
+    .cm-red{
+        width: 100%;
+    }
+
+    .ico-ico{
+        max-width: 64px;
+        max-height: 64px;
+        margin: 1rem 2rem;
+    }
+
+    /* FOOTER */
+
+    .copyright{
+        font-size: 2.5rem;
+    }
+
+    .thanks{
+        font-size: 2rem;
     }
 
 }
 
 @media screen and (min-width: 1024px) {
-    main{
-        background-color: skyblue;
-    }
-}
 
+    /* LANDING */
+
+    .lp-hw{
+        font-size: 3.5rem;
+    }
+
+    .lp-mn{
+        font-size: 5rem;
+    }
+
+    .lp-name{
+        font-size: 6.5rem;
+    }
+
+    .lp-wmd{
+        font-size: 3rem;
+    }
+
+    .lp-w{
+        font-size: 4rem;
+    }
+
+    .lp-m{
+        font-size: 4rem;
+    }
+
+    .lp-developer{
+        font-size: 3.5rem;
+    }
+
+    /* SKILLS */
+
+    .skill-a p.sk-title{
+        font-size: 3rem;
+    }
+
+    .sk-desc-front{
+        font-size: 2.5rem;
+    }
+
+    /* EXPERIENCE */
+
+    .ex-title{
+        font-size: 4rem;
+    }
+
+    .ex-sd-wt{
+        font-size: 3.8rem;
+    }
+
+    .ex-sd-wd{
+        font-size: 2.5rem;
+    }
+
+    .ex-sd-exp-t{
+        font-size: 3rem;
+    }
+
+    .ex-sd-exp-d{
+        font-size: 3rem;
+    }
+
+    /* ABOUT ME */
+
+    .am-title{
+        font-size: 4rem;
+    }
+
+    .am-me-img {
+        width: 30%;
+        margin: 5rem;
+    }
+
+    .am-des-me{
+      margin-top: 3rem;
+    }
+
+    .am-me-des-title{
+        font-size: 5rem;
+    }
+
+    .am-me-des-title-name{
+        font-size: 6.5rem;
+    }
+
+    .am-me-des-about-data{
+        font-size: 4rem;
+    }
+
+    /* CONTACT */
+
+    .cm-title{
+        font-size: 4rem;
+    }
+
+    .cm-des{
+        font-size: 3.5rem;
+    }
+
+    .cm-btn-s{
+        font-size: 3rem;
+    }
+
+}
+/* 
 @media screen and (min-width: 1440px) {
 
-    header{
-
-    }
-
-    main{
-        background-color: blue;
-    }
 }
 
 @media screen and (min-width: 2560px) {
 
-    main{
-        background-color: violet;
-    }
-}
+} */
